@@ -5,7 +5,7 @@ import os
 
 # Unzip the model files if they are not already unzipped
 if not os.path.exists('random_forest_tfidf_tuned_model.pkl') or not os.path.exists('tfidf_tokenizer.pkl'):
-    with zipfile.ZipFile('models.zip', 'r') as zip_ref:
+    with zipfile.ZipFile('random_forest_tfidf_tuned_model.zip', 'r') as zip_ref:
         zip_ref.extractall()  # Extract all files in the current directory
 
 # Load the Random Forest model and TF-IDF tokenizer
